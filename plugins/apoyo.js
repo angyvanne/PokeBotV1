@@ -11,7 +11,7 @@ reacMoji(m.chat, conn, '❤️', m)
 
 handler.help = ['apoyo']
 handler.tags = ['casual']
-handler.command = /^(apoyo|apoyar|donar|donasi|dono)$/i
+handler.command = /^(apoyo|apoyar)$/i
 handler.exp = 100 //:V
 
 export default handler
