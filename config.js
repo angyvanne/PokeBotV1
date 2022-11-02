@@ -19,9 +19,9 @@ global.OwnerNum = '51995386439'
 global.PaisPrefix = '51'
 global.Prefijo = '.'
 global.MyApiKey = 'nekosmic' //zzz
-global.NombreDelBot = 'PokeBotMx' //vMD
+global.NombreDelBot = 'NK-BOT' //vMD
 global.BotVersion = dPkg.version
-global.TusRedesSociales = "[ > ] Canal de Youtube:\n- *PROXIMAMENTE* \n\n[ f ] Página de Facebook:\n- *https://www.facebook.com/HecThor.ash.rada*\n\n[Ꮄ] Donaciones para mantener el bot:\n- https://paypal.me/radaash?country.x=MX&locale.x=es_XC\n\n"
+global.TusRedesSociales = "[ > ] Canal de Youtube:\n- *PROXIMAMENTE*\n\n[ f ] Página de Facebook:\n- https://www.facebook.com/HecThor.ash.rada/\n\n[Ꮄ] Donaciones:\n- https://paypal.me/radaash?country.x=MX&locale.x=es_XC/\n\n *gracias por tu apoyo*  :³"
 global.UsLimitesCmd = '20'
 global.MinimoDeUsuarios = '2'
 
@@ -69,9 +69,3 @@ watchFile(file, () => {
   console.log(chalk.cyan("\n["+file+"] Fue actualizado con exito!\n"))
   import(`${file}?update=${Date.now()}`)
 })
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Secur
