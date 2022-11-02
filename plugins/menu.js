@@ -124,7 +124,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, command, isPrems }) =
     await conn.sendMessage(m.chat, {
 image: {url: pweb },
 caption: text.trim(),
-footer: `\n┏⊱ ${PokeBotMx}\n┗━⊱ ${MultiNK.Habla()} ✓`,
+footer: `\n┏⊱ ${NombreDelBot}\n┗━⊱ ${MultiNK.Habla()} 
+buttons: [{buttonId: Prefijo+`apoyo`, buttonText: {displayText: "[ APOYO ]"}],
 headerType: 4,
 ...{ contextInfo: { mentionedJid: [m.sender], externalAdReply: { thumbnail: fs.readFileSync('./multimedia/imagenes/logo.jpg'), sourceUrl: 'https://github.com/NeKosmic/NK-BOT-MD/fork?rgh-fork=true' }}}
 }, { quoted: m }) 
