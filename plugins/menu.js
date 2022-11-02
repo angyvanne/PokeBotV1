@@ -137,14 +137,9 @@ reacMoji(m.chat, conn, '📃', m)
 }
 const defaultMenu = {
   before: `\n
-╔I [ \`\`\`%npmname\`\`\` ]
-║❂ Base de datos: %rtotalreg a %totalreg
-║❂ Tiempo activo: %uptime
-║❂ Version del bot: %version
-║❂ Dueño del bot: %prop
+╔I [ \`\`\`PokeBotMx\`\`\` ]
+║❂ Dueño del bot: RadaAsh
 ║❂ Prefijo único: 「 %pref 」
-║❂ Cliente: %name
-║❂ Premium: %prem
 ║❂ Limite restante: %limit
 ║❂ Nivel: %level (%exp / %maxexp)
 ║❂ Rol: %role
