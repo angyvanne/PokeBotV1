@@ -1,9 +1,0 @@
-const comandos= { //propiedad
-    /*Propiedad*/.eventos: /*valor que retor*/() => {
-    |   message.reply(estos son los siguientes eventos:\n\n1- *Safari* (para ejecutar escribe .safari)Zone\n\n2-*Dia de la comunidad* (para ejecutar escribe .cd)\n\n3-*horas destacadas*  (ejecuta escribiendo .hrs)\n\n;
-    }
-   }
-   
-   client.on('message' , message => {
-        comandos/*objeto*/[message.body/**Propiedad*/]()
-   });
