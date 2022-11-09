@@ -15,11 +15,11 @@ const dPkg = require(join(__dirname, './package.json'))
 //
 global.MultiNK = es; //Lenguaje nativo
 global.Propietario = dPkg.author.name
-global.OwnerNum = '51995386439'
-global.PaisPrefix = '51'
+global.OwnerNum = '525536379365'
+global.PaisPrefix = '52'
 global.Prefijo = '.'
 global.MyApiKey = 'nekosmic' //zzz
-global.NombreDelBot = 'NK-BOT' //vMD
+global.NombreDelBot = 'PokeBot' //vMD
 global.BotVersion = dPkg.version
 global.TusRedesSociales = "[ > ] Canal de Youtube:\n- *PROXIMAMENTE*\n\n[ f ] Página de Facebook:\n- https://www.facebook.com/HecThor.ash.rada/\n\n[Ꮄ] Donaciones:\n- https://paypal.me/radaash?country.x=MX&locale.x=es_XC/\n\n *gracias por tu apoyo*  :³"
 global.UsLimitesCmd = '20'
