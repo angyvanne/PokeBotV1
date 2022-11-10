@@ -1,4 +1,4 @@
-console.log('Ejecutando el Bot mas shidori tercer mundista.\nComenzando ejecucion del script...');
+console.log('Iniciando bot, espera un momento...\nComenzando ejecucion del script...');
 
 import { join, dirname } from 'path'
 import { createRequire } from 'module'
