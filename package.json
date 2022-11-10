@@ -1,7 +1,7 @@
 {
     "name": "PokeBotMx",
     "version": "1.0.0",
-    "description": "WhatsApp bot NK versión Multidevice :3",
+    "description": "WhatsApp bot versión Multidevice :3",
     "main": "nkbot.js",
     "type": "module",
     "directories": {
