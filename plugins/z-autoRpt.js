@@ -26,15 +26,23 @@ if (rtps1.includes("prefijo?") || (rtps1.includes("Prefijo?"))){
 m.reply(`*Por si estas preguntando cual es el prefijo del bot*\n_Prefijo actual para uso de comandos_ : \n\n" *${Prefijo}* "\n`)
 }
 //
+if (rtps2.startsWith("destraba") || rtps2.startsWith("Destraba") || rtps2.startsWith("destrava") || rtps2.startsWith("Destrava")){
+if (!m.isBaileys && !m.fromMe) { this.sendMessage(m.chat,{text:not.kuakerzzz},{quoted:m})
+} else {
+this.sendMessage(m.chat,{text:not.kuakerzzz},{quoted:m})
+m.limit = 10
+}
+}
+//
 if (rtps1.includes(".Safari") || rtps1.includes(".safari") || rtps1.includes("safari") || rtps1.includes("Safari")){
 m.reply(`*hola, en un momento te comparto la informacion de los proximos safaris zone:*`)
 setTimeout( () => {
-m.reply(`*Lugar:* Gardens by the Bay\n_*fecha:* desde el viernes, 18 de noviembre de 2022 hasta el domingo, 20 de noviembre\n_*costos aproximados:* 238 pesos de 12:00 a 18:00 horas o 350 pesos de 10:00 a 18:00 horas\n_*Cordenadas (por si eres un sucio fly):* Se subiran unos dias antes del evento`)
+m.reply(`*Lugar:* Gardens by the Bay\n_*fecha:* desde el viernes, 18 de noviembre de 2022 hasta el domingo, 20 de noviembre\n_*costos aproximados:* 238 pesos de 12:00 a 18:00 horas o 350 pesos de 10:00 a 18:00 horas\n_*Cordenadas, por si eres un sucio fly:* Se subiran unos dias antes del evento`)
 }, 2500)
 m.limit = 5
 }
 if (rtps1.includes("Comunity") || rtps1.includes("comunity") || rtps1.includes(".comunity") || rtps1.includes(".Comunity") || rtps1.includes(".CD") || rtps1.includes(".cd") || rtps1.includes(".Cd")){
-m.reply(`*hola, asi que quieres info de los proximos dias de la comunidad, dame un momento y la enviare:*`)
+m.reply(`*hola, asi que quieres info de los proximos dias de la comunidad?, dame un momento y la enviare:*`)
 setTimeout( () => {
 m.reply(`*CD 12 de Noviembre:* Teddiursa\n_*Horario:* de 14:00 a 17:00hrs\n_*caracteristicas:* Evoluciona a Ursaring para conseguir al pokemon Ursaluna con el ataque cargado *fuerza equina*\n_*Bonus:* polvo estelar x3, doble caramelos por captura, si eres nivel +31 tendras mayor posibilidad de recibir caramelos++, podra realizarse 1 intercambio especial adicional, *entre mas cosas*\n_ *a continuacion te envio una infografia del evento*`)
 }, 2500)
