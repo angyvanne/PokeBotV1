@@ -35,19 +35,18 @@ m.limit = 10
 }
 //
 if (rtps1.includes(".Safari") || rtps1.includes(".safari")){
-m.reply(`*hola, en un momento te comparto la informacion de los proximos safaris zone:* 🤖`)
+m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos safaris zone:*`)
 setTimeout( () => {
-m.reply(`*Lugar:* Gardens by the Bay\n_*fecha:* desde el viernes, 18 de noviembre de 2022 hasta el domingo, 20 de noviembre\n_*costos aproximados:* 238 pesos de 12:00 a 18:00 horas o 350 pesos de 10:00 a 18:00 horas\n_*Cordenadas, por si eres un sucio fly:* Se subiran unos dias antes del evento* 😎🤝`)
+m.reply(`*Lugar:* Gardens by the Bay\n*fecha:* desde el viernes, 18 de noviembre de 2022 hasta el domingo, 20 de noviembre\n*costos aproximados:* 238 pesos de 12:00 a 18:00 horas o 350 pesos de 10:00 a 18:00 horas\n*Cordenadas, por si eres un sucio fly:* Se subiran unos dias antes del evento* 😎🤝`)
 }, 2500)
 m.limit = 5
 }
-if (rtps1.includes("zzz") || rtps1.includes("Zzz")){
-m.reply(`*Tienes sueño o anemia?*\n_*Ve al medico y notaras la diferencia ;)*_ `)
+if (rtps1.includes(".CD") || rtps1.includes(".Cd")){
+m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos dias de la comunidad:*`)
+setTimeout( () => {
+m.reply(`*12/11:* Teddiursa\n_*evolucion:* teddiursa-ursaring-ursaluna\n_*ataque legado:* Ursaluna obtendra el ataque Fuerza Equina\n_*bonus:* polvo estelar x3`)
+}, 2500)
 m.limit = 5
-}
-if (rtps1.includes("impostor") || rtps1.includes("Impostor")){
-m.reply(`*AmongUs*`)
-m.limit = 1
 }
 if (rtps1.includes("ctm") || rtps1.includes("Ctm")){
 m.reply(`*Cuida-Tu-Mundo*`)
