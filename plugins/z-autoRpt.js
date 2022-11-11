@@ -31,14 +31,14 @@ m.reply(`*hola, en un momento te comparto la informacion de los proximos safaris
 setTimeout( () => {
 m.reply(`*Lugar:* Gardens by the Bay\n_*fecha:* desde el viernes, 18 de noviembre de 2022 hasta el domingo, 20 de noviembre\n_*costos aproximados:* 238 pesos de 12:00 a 18:00 horas o 350 pesos de 10:00 a 18:00 horas\n_*Cordenadas (por si eres un sucio fly):* Se subiran unos dias antes del evento`)
 }, 2500)
-m.limit = 1
+m.limit = 5
 }
 if (rtps1.includes("Comunity") || rtps1.includes("comunity") || rtps1.includes(".comunity") || rtps1.includes(".Comunity") || rtps1.includes(".CD") || rtps1.includes(".cd") || rtps1.includes(".Cd")){
 m.reply(`*hola, asi que quieres info de los proximos dias de la comunidad, dame un momento y la enviare:*`)
 setTimeout( () => {
 m.reply(`*CD 12 de Noviembre:* Teddiursa\n_*Horario:* de 14:00 a 17:00hrs\n_*caracteristicas:* Evoluciona a Ursaring para conseguir al pokemon Ursaluna con el ataque cargado *fuerza equina*\n_*Bonus:* polvo estelar x3, doble caramelos por captura, si eres nivel +31 tendras mayor posibilidad de recibir caramelos++, podra realizarse 1 intercambio especial adicional, *entre mas cosas*\n_ *a continuacion te envio una infografia del evento*`)
 }, 2500)
-m.limit = 1
+m.limit = 5
 setTimeout( () => {
 m.reply(`*CD de Diciembre:* Fecha por confirmar\n_ *posiblemente como se ha presentado en los años anteriores se cuente con un CD de todos los pokemon que han salido en los CD del año*\n_*proxuimamente mas informacion`)
 }, 2500)
@@ -51,26 +51,26 @@ m.limit = 1
 }
 if (rtps1.includes("ctm") || rtps1.includes("Ctm")){
 m.reply(`*Cuida-Tu-Mundo*`)
-m.limit = 
+m.limit = 5
 }
 if (rtps1.includes("lptm") || rtps1.includes("Lptm")){
 m.reply(`*La-Paja-Te-Mata*`)
-m.limit = 0
+m.limit = 1
 }
 if (rtps1.includes("ptm") || rtps1.includes("Ptm")){
 m.reply(`*Pronto-Te-Moriras*`)
-m.limit = 0
+m.limit = 5
 }
 
 //Simp bot gaaa :u
 if (rtps1.includes("bot gracias") || (rtps1.includes("Bot gracias") || (rtps1.includes("gracias bot") || (rtps1.includes("Gracias bot"))))){
 this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} pa servirle mi king nwn`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
-m.limit = 0
+m.limit = 2
 }
 if (rtps1.includes("te amo bot") || (rtps1.includes("Te amo bot") || (rtps1.includes("bot te amo") || (rtps1.includes("Bot te amo"))))){
 let resrand = pickRandom(["love1", "love2", "love3", "love4", "love5", "love6"])
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/"+resrand+".webp"}, mentions: [m.sender]}, {quoted: {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `${pushname} <3`,jpegThumbnail: mylogo}}} })
-m.limit = 0
+m.limit = 5
 }
 
 //Si 🧐//
