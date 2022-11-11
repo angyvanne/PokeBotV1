@@ -26,58 +26,51 @@ if (rtps1.includes("prefijo?") || (rtps1.includes("Prefijo?"))){
 m.reply(`*Por si estas preguntando cual es el prefijo del bot*\n_Prefijo actual para uso de comandos_ : \n\n" *${Prefijo}* "\n`)
 }
 //
-if (rtps2.startsWith("destraba") || rtps2.startsWith("Destraba") || rtps2.startsWith("destrava") || rtps2.startsWith("Destrava")){
-if (!m.isBaileys && !m.fromMe) { this.sendMessage(m.chat,{text:not.kuakerzzz},{quoted:m})
-} else {
-this.sendMessage(m.chat,{text:not.kuakerzzz},{quoted:m})
-m.limit = 10
-}
-}
-//
 if (rtps1.includes(".Safari") || rtps1.includes(".safari") || rtps1.includes("safari") || rtps1.includes("Safari")){
-m.reply(`*hola, aqui esta la informacion de los proximos safaris zone:*`)
+m.reply(`*hola, en un momento te comparto la informacion de los proximos safaris zone:*`)
 setTimeout( () => {
-m.reply(`*Lugar:* Gardens by the Bay\n_*fecha:* desde el viernes, 18 de noviembre de 2022 hasta el domingo, 20 de noviembre\n_*costos aproximados:* 238 pesos de 12:00 a 18:00 horas o 350 pesos de 10:00 a 18:00 horas`)
+m.reply(`*Lugar:* Gardens by the Bay\n_*fecha:* desde el viernes, 18 de noviembre de 2022 hasta el domingo, 20 de noviembre\n_*costos aproximados:* 238 pesos de 12:00 a 18:00 horas o 350 pesos de 10:00 a 18:00 horas\n_*Cordenadas (por si eres un sucio fly):* Se subiran unos dias antes del evento`)
 }, 2500)
-m.limit = 5
+m.limit = 0
 }
-if (rtps1.includes("zzz") || rtps1.includes("Zzz")){
-m.reply(`*Tienes sueño o anemia?*\n_*Ve al medico y notaras la diferencia ;)*_ `)
-m.limit = 5
-}
-if (rtps1.includes("impostor") || rtps1.includes("Impostor")){
-m.reply(`*AmongUs*`)
-m.limit = 1
+if (rtps1.includes("Comunity") || rtps1.includes("comunity") || rtps1.includes(".comunity") || rtps1.includes(".Comunity") || rtps1.includes(".CD") || rtps1.includes(".cd") || rtps1.includes(".Cd")){
+m.reply(`*hola, asi que quieres info de los proximos dias de la comunidad, dame un momento y la enviare:*`)
+setTimeout( () => {
+m.reply(`*CD 12 de Noviembre:* Teddiursa\n_*Horario:* de 14:00 a 17:00hrs\n_*caracteristicas:* Evoluciona a Ursaring para conseguir al pokemon Ursaluna con el ataque cargado *fuerza equina*\n_*Bonus:* polvo estelar x3, doble caramelos por captura, si eres nivel +31 tendras mayor posibilidad de recibir caramelos++, podra realizarse 1 intercambio especial adicional, *entre mas cosas*\n_ *a continuacion te envio una infografia del evento*`)
+}, 2500)
+m.limit = 0
+setTimeout( () => {
+m.reply(`*CD de Diciembre:* Fecha por confirmar\n_ *posiblemente como se ha presentado en los años anteriores se cuente con un CD de todos los pokemon que han salido en los CD del año*\n_*proxuimamente mas informacion`)
+}, 2500)
+if (rtps1.includes("hora destacada") || rtps1.includes("Hora destacada") || rtps1.includes(".hrades") || rtps1.includes(".horadestacada") || rtps1.includes(".Horadestacada")){
+m.reply(`*En un momento te envio la informacion de las horas destacadas del mes*`)
+setTimeout( () => {
+m.reply(`*1 de noviembre:* Duskull con bonus de doble polvo estelar por captura\n_*8 de noviembre:* Croagunk con el bonus de doble exp por captura\n_*15 de noviembre:* Porygon con bonus de doble caramelos por captura\n_*22 de noviembre:* Petilil con el bonus de doble caramelo por transferencia\n_*29 de noviembre:* Hoothoot con el bonus de doble exp por evolucionar pokemon`)
+}, 2500)
+m.limit = 0
 }
 if (rtps1.includes("ctm") || rtps1.includes("Ctm")){
 m.reply(`*Cuida-Tu-Mundo*`)
-m.limit = 5
+m.limit = 0
 }
 if (rtps1.includes("lptm") || rtps1.includes("Lptm")){
 m.reply(`*La-Paja-Te-Mata*`)
-m.limit = 1
+m.limit = 0
 }
 if (rtps1.includes("ptm") || rtps1.includes("Ptm")){
 m.reply(`*Pronto-Te-Moriras*`)
-m.limit = 5
-}
-
-//Insultos al bot :vvv
-if (rtps1.includes("puto bot") || (rtps1.includes("Puto bot") || (rtps1.includes("bot puto") || (rtps1.includes("Bot puto") || (rtps1.includes("pinche bot") || (rtps1.includes("Pinche bot") || (rtps1.includes("bot gey") || (rtps1.includes("Bot gey") || (rtps1.includes("bot gay") || (rtps1.includes("Bot gay"))))))))))){
-let resrand = pickRandom(["rpt1", "rpt2", "rpt3", "rpt4", "rpt5", "rpt6", "rpt7", "rpt8", "rpt9", "rpt10", "rpt11", "rpt12", "rpt13", "rpt14", "rpt15", "rpt16", "rpt17", "rpt18", "rpt19", "rpt20", "rpt21", "rpt22", "rpt23", "rpt24", "rpt25", "rpt26", "rpt27", "rpt28", "rpt29", "rpt30", "rpt31", "rpt32", "rpt33", "rpt34", "rpt35", "rpt36", "rpt37", "rpt38", "rpt39", "rpt40", "rpt41", "rpt42", "rpt43", "rpt44", "rpt45", "rpt46", "rpt47", "rpt48", "rpt49", "rpt50", "rpt51", "rpt52", "rpt53", "rpt54", "rpt55", "rpt56", "rpt57", "rpt58", "rpt59", "rpt60", "rpt61", "rpt62", "rpt63", "rpt64", "rpt65", "rpt66", "rpt67", "rpt68", "rpt69", "rpt70", "rpt71", "rpt72", "rpt73", "rpt74", "rpt75", "rpt76", "rpt77"])
-this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/"+resrand+".webp"}, mentions: [m.sender]}, {quoted: {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "51995386439-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `${pushname}: ${m.text}`, 'jpegThumbnail': mylogo}}} })
-m.limit = 5
+m.limit = 0
 }
 
 //Simp bot gaaa :u
 if (rtps1.includes("bot gracias") || (rtps1.includes("Bot gracias") || (rtps1.includes("gracias bot") || (rtps1.includes("Gracias bot"))))){
 this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} pa servirle mi king nwn`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
-m.limit = 2
+m.limit = 0
 }
 if (rtps1.includes("te amo bot") || (rtps1.includes("Te amo bot") || (rtps1.includes("bot te amo") || (rtps1.includes("Bot te amo"))))){
 let resrand = pickRandom(["love1", "love2", "love3", "love4", "love5", "love6"])
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/"+resrand+".webp"}, mentions: [m.sender]}, {quoted: {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `${pushname} <3`,jpegThumbnail: mylogo}}} })
-m.limit = 5
+m.limit = 0
 }
 
 //Si 🧐//
@@ -145,11 +138,6 @@ m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘ
 m.limit = 1
 }
 
-//fakemsj - no es real . _.
-if (rtps1.includes("pasen porno") || (rtps1.includes("Pasen porno") || (rtps1.includes("pasen xxx") || (rtps1.includes("Pasen xxx"))))){
-this.sendMessage(m.chat, { text: `https://www.interpol.int 𝙸𝚗𝚝𝚎𝚛𝚙𝚘𝚕 𝚖𝚘𝚗𝚒𝚝𝚘𝚛𝚎𝚊 𝚕𝚘𝚜 𝚐𝚛𝚞𝚙𝚘𝚜 𝚍𝚎 𝚠𝚑𝚊𝚝𝚜𝚊𝚙𝚙\n*${pushname}️* , 𝚂𝚎𝚐𝚞𝚗 𝚕𝚊𝚜 𝚗𝚘𝚛𝚖𝚊𝚜 𝚍𝚎 𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙 𝚎𝚜𝚎 𝚝𝚒𝚙𝚘 𝚍𝚎 𝚖𝚊𝚝𝚎𝚛𝚒𝚊𝚕 𝚎𝚜𝚝𝚊𝚗 𝚙𝚛𝚘𝚑𝚒𝚋𝚒𝚍𝚘𝚜, 𝙿𝚘𝚛 𝚛𝚊𝚣??𝚗𝚎𝚜 𝚍𝚎 𝚜𝚎𝚐𝚞𝚛𝚒𝚍𝚊𝚍 𝚝𝚞 𝚗𝚞𝚖𝚎𝚛𝚘 𝚜𝚎𝚛𝚊 𝚊𝚐𝚎𝚗𝚍𝚊𝚍𝚘 𝚎𝚗 𝚕𝚊 *Database...*`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "51995386439-1604595598@g.us"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: fs.readFileSync('./multimedia/imagenes/rgdata.jpg'), surface: 200, message: `Usuario: ${pushname}\nNumero: ${etiqueta}`, orderTitle: 'Matt_M', sellerJid: '0@s.whatsapp.net'}}} })
-m.limit = 10
-}
 
 //autorrespuesta multimedia
 if (rtps2.startsWith("kawai")){
