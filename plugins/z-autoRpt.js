@@ -34,6 +34,13 @@ m.limit = 10
 }
 }
 //
+if (rtps1.includes(".Pokebot") || rtps1.includes(".pokebot")){
+m.reply(`🤖*hola, gracias por usar el bot, te comparto la lista de comandos(RECUERDA PONER UN . ANTES DE CADA COMANDO):*`)
+setTimeout( () => {
+m.reply(`*.Safari o .safari:* Informacion de los proximos safari zone\n\n*.cd o .Cd:* informacion de los proximos dias de la comunidad\n\n*.HraDes o . hrades:* informacion de las proximas horas destacadas\n\n*.HraLeg o .hraleg:* informacion de kas proximas horas legendarias*\n\n*.Capi o .capi:* comparte el ultimo capitulo del anime\n\n *.sticker:* usalo para conbertir una imagen en sticker, tambien funciona con videos de menos de 10 segundos de duracion. 😎🤝`)
+}, 2500)
+m.limit = 5
+}
 if (rtps1.includes(".Safari") || rtps1.includes(".safari")){
 m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos safaris zone:*`)
 setTimeout( () => {
@@ -41,26 +48,34 @@ m.reply(`*Lugar:* Gardens by the Bay\n*fecha:* desde el viernes, 18 de noviembre
 }, 2500)
 m.limit = 5
 }
-if (rtps1.includes(".CD") || rtps1.includes(".Cd")){
+if (rtps1.includes(".cd") || rtps1.includes(".Cd")){
 m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos dias de la comunidad:*`)
 setTimeout( () => {
-m.reply(`*12/11:* Teddiursa\n_*evolucion:* teddiursa-ursaring-ursaluna\n_*ataque legado:* Ursaluna obtendra el ataque Fuerza Equina\n_*bonus:* polvo estelar x3`)
+m.reply(`*12/11:* Teddiursa\n*evolucion:* teddiursa-ursaring-ursaluna\n*ataque legado:* Ursaluna obtendra el ataque Fuerza Equina\n*bonus:* polvo estelar x3`)
 }, 2500)
 m.limit = 5
 }
-if (rtps1.includes("ctm") || rtps1.includes("Ctm")){
-m.reply(`*Cuida-Tu-Mundo*`)
+if (rtps1.includes(".HraDes") || rtps1.includes(".hrades")){
+m.reply(`🤖*buscando las siguientes horas destacadas:*`)
+setTimeout( () => {
+m.reply(`*15/11:* Porygon con bonus de doble caramelos por captura\n*22/11:* Petilil con bonus de doble caramelos por transferencia\n*29/11:* Hoothoot con bonus de doble exp por eviolucionar`)
+}, 2500)
 m.limit = 5
 }
-if (rtps1.includes("lptm") || rtps1.includes("Lptm")){
-m.reply(`*La-Paja-Te-Mata*`)
-m.limit = 1
-}
-if (rtps1.includes("ptm") || rtps1.includes("Ptm")){
-m.reply(`*Pronto-Te-Moriras*`)
+if (rtps1.includes(".HraLeg") || rtps1.includes(".hraleg")){
+m.reply(`🤖*buscando las siguientes horas destacadas:*`)
+setTimeout( () => {
+m.reply(`*16/11:* Guzzlord\n*23/11:* Nihilego\n*30/11:* Nihilego`)
+}, 2500)
 m.limit = 5
 }
-
+if (rtps1.includes(".capi") || rtps1.includes(".Capi")){
+m.reply(`🤖*hola en un momento comparto el capitulo de la semana en el anime:*`)
+setTimeout( () => {
+m.reply(`*Aun en espera de que se cargue el capitulo*`)
+}, 2500)
+m.limit = 5
+}
 //Insultos al bot :vvv
 if (rtps1.includes("puto bot") || (rtps1.includes("Puto bot") || (rtps1.includes("bot puto") || (rtps1.includes("Bot puto") || (rtps1.includes("pinche bot") || (rtps1.includes("Pinche bot") || (rtps1.includes("bot gey") || (rtps1.includes("Bot gey") || (rtps1.includes("bot gay") || (rtps1.includes("Bot gay"))))))))))){
 let resrand = pickRandom(["rpt1", "rpt2", "rpt3", "rpt4", "rpt5", "rpt6", "rpt7", "rpt8", "rpt9", "rpt10", "rpt11", "rpt12", "rpt13", "rpt14", "rpt15", "rpt16", "rpt17", "rpt18", "rpt19", "rpt20", "rpt21", "rpt22", "rpt23", "rpt24", "rpt25", "rpt26", "rpt27", "rpt28", "rpt29", "rpt30", "rpt31", "rpt32", "rpt33", "rpt34", "rpt35", "rpt36", "rpt37", "rpt38", "rpt39", "rpt40", "rpt41", "rpt42", "rpt43", "rpt44", "rpt45", "rpt46", "rpt47", "rpt48", "rpt49", "rpt50", "rpt51", "rpt52", "rpt53", "rpt54", "rpt55", "rpt56", "rpt57", "rpt58", "rpt59", "rpt60", "rpt61", "rpt62", "rpt63", "rpt64", "rpt65", "rpt66", "rpt67", "rpt68", "rpt69", "rpt70", "rpt71", "rpt72", "rpt73", "rpt74", "rpt75", "rpt76", "rpt77"])
