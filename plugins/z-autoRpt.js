@@ -34,10 +34,10 @@ m.limit = 10
 }
 }
 //
-if (rtps1.includes("c suicida") || rtps1.includes("C suicida")){
-m.reply(`*El suicidio no es una opcion* 😞🤙`)
+if (rtps1.includes(".Safari") || rtps1.includes(".safari") || rtps1.includes("safari") || rtps1.includes("Safari")){
+m.reply(`*hola, aqui esta la informacion de los proximos safaris zone:*`)
 setTimeout( () => {
-m.reply(`_*Es la solución*_ 😎🤝`)
+m.reply(`*Lugar:* Gardens by the Bay\n_*fecha:* desde el viernes, 18 de noviembre de 2022 hasta el domingo, 20 de noviembre\n_*costos aproximados:* 238 pesos de 12:00 a 18:00 horas o 350 pesos de 10:00 a 18:00 horas`)
 }, 2500)
 m.limit = 5
 }
