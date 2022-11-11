@@ -19,7 +19,7 @@ global.OwnerNum = '525536379365'
 global.PaisPrefix = '52'
 global.Prefijo = '.'
 global.MyApiKey = 'nekosmic' //zzz
-global.NombreDelBot = 'PokeBot' //vMD
+global.NombreDelBot = 'PokeBotMx' //vMD
 global.BotVersion = dPkg.version
 global.TusRedesSociales = "[ > ] Canal de Youtube:\n- *PROXIMAMENTE*\n\n[ f ] Página de Facebook:\n- https://www.facebook.com/HecThor.ash.rada/\n\n[Ꮄ] Donaciones:\n- https://paypal.me/radaash?country.x=MX&locale.x=es_XC/\n\n *gracias por tu apoyo*  :³"
 global.UsLimitesCmd = '20'
