@@ -39,28 +39,28 @@ m.reply(`🤖*hola, gracias por usar el bot, te comparto la lista de comandos(RE
 setTimeout( () => {
 m.reply(`*.Safari o .safari:* Informacion de los proximos safari zone\n\n*.cd o .Cd:* informacion de los proximos dias de la comunidad\n\n*.HraDes o . hrades:* informacion de las proximas horas destacadas\n\n*.HraLeg o .hraleg:* informacion de kas proximas horas legendarias*\n\n*.Capi o .capi:* comparte el ultimo capitulo del anime\n\n *.sticker:* usalo para conbertir una imagen en sticker, tambien funciona con videos de menos de 10 segundos de duracion. 😎🤝`)
 }, 2500)
-m.limit = 03
+m.limit = 3
 }
 if (rtps1.includes(".Safari") || rtps1.includes(".safari")){
 m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos safaris zone:*`)
 setTimeout( () => {
 m.reply(`*Lugar:* Gardens by the Bay\n*fecha:* desde el viernes, 18 de noviembre de 2022 hasta el domingo, 20 de noviembre\n*costos aproximados:* 238 pesos de 12:00 a 18:00 horas o 350 pesos de 10:00 a 18:00 horas\n*Cordenadas, por si eres un sucio fly:* Se subiran unos dias antes del evento* 😎🤝`)
 }, 2500)
-m.limit = 03
+m.limit = 3
 }
 if (rtps1.includes(".cd") || rtps1.includes(".Cd")){
 m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos dias de la comunidad:*`)
 setTimeout( () => {
 m.reply(`*12/11:* Teddiursa\n*evolucion:* teddiursa-ursaring-ursaluna\n*ataque legado:* Ursaluna obtendra el ataque Fuerza Equina\n*bonus:* polvo estelar x3`)
 }, 2500)
-m.limit = 03
+m.limit = 3
 }
 if (rtps1.includes(".HraDes") || rtps1.includes(".hrades")){
 m.reply(`🤖*buscando las siguientes horas destacadas:*`)
 setTimeout( () => {
 m.reply(`*15/11:* Porygon con bonus de doble caramelos por captura\n*22/11:* Petilil con bonus de doble caramelos por transferencia\n*29/11:* Hoothoot con bonus de doble exp por eviolucionar`)
 }, 2500)
-m.limit = 03
+m.limit = 3
 }
 if (rtps1.includes(".HraLeg") || rtps1.includes(".hraleg")){
 m.reply(`🤖*buscando las siguientes horas destacadas:*`)
