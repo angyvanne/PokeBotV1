@@ -81,7 +81,7 @@ if (rtps1.includes(".otros") || rtps1.includes(".Otros")){
 m.reply(`🤖*Cargando mas eventos:*`)
 setTimeout( () => {
 m.reply(`*.POKÉMON AIR ADVENTURES (PRE SAFARI ZONE SINGAPORE):* Para celebrar las Aventuras Aéreas Pokémon, los Entrenadores y Entrenadoras de Singapur podrán encontrarse a Pikachu con una camiseta morada (flores) en los próximos meses.\n\n*😎🤝`)
-}, 2500))
+}, 2500)
 m.limit = 1	
 }
 //Insultos al bot :vvv
