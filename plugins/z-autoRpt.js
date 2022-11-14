@@ -65,7 +65,6 @@ if (rtps1.includes(".HraLeg") || rtps1.includes(".hraleg")){
 m.reply(`🤖*buscando las siguientes horas destacadas:*`)
 setTimeout( () => {
 m.reply(`*16/11:* Guzzlord\n*23/11:* Nihilego\n*30/11:* Nihilego`)
-this.sendMessaage(m.chat, {image: {url: "https://d.newsweek.com/en/full/2141995/pokemon-go-guzzlord.png"}} {quoted:m})
 }, 2500)
 m.limit = 0
 }
