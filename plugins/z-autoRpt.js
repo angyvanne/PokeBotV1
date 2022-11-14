@@ -337,16 +337,16 @@ m.limit = 5
 }
 //
 //
-if (rtps1.includes("si 👍") || (rtps1.includes("Si 👍"))){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audishitxd/si_sp.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `Si 👍`, body: `Joseph_A`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `si_laik.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+if (rtps1.includes("onichan") || (rtps1.includes("Onichan"))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotV1/blob/main/multimedia/sonidos/Onichan.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `Si 👍`, body: `Joseph_A`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `si_laik.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
 m.limit = 1
 }
-if (rtps1.includes("no returbio") || (rtps1.includes("No returbio") || (rtps1.includes("No re turbio") || (rtps1.includes("No re turbio"))))){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audishitxd/turrbio.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `No!, Re-Turbio... ._.`, body: `Joseph_A`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `si_laik.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+if (rtps1.includes("gracias sempai") || (rtps1.includes("sempai") || (rtps1.includes("hola sempai") || ))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotV1/blob/main/multimedia/sonidos/Tu.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `No!, Re-Turbio... ._.`, body: `Joseph_A`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `si_laik.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
 m.limit = 1
 }
-if (rtps1.includes("oh me vengo") || (rtps1.includes("Oh me vengo"))){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audishitxd/ohhh_xd.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `Oh! me vengo... 🥵`, body: `Joseph_A`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `si_laik.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+if (rtps1.includes("que callados") || (rtps1.includes("esta muerto el grupo") || (rtps1.includes("Esta muerto el grupo") || (rtps1.includes("Que callados"))))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotV1/blob/main/multimedia/sonidos/Murio.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `Oh! me vengo... 🥵`, body: `Joseph_A`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `si_laik.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
 m.limit = 1
 }
 if (rtps1.includes("con flores") || (rtps1.includes("Con flores"))){
