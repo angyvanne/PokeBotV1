@@ -11,8 +11,7 @@ handler.all = async function(m) {
 	let chat = db.data.chats[m.chat]
 	let { limit, banned } = db.data.users[m.sender]
 	if (chat.isBanned) return 
-	if (banned) return 
-	if (limit < 1) return 
+	if (banned) return
 	try{var userthumb=await this.profilePictureUrl(m.sender,'image')}catch{var userthumb='https://i.ibb.co/jhQ7gL0/Sin-Perfil-F.jpg'}
 	let mylogo = fs.readFileSync('./multimedia/imagenes/mylogo.jpg')
 	let rtps1 = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype === 'extendedTextMessage') ? m.message.extendedTextMessage.text : ''
@@ -39,7 +38,7 @@ m.reply(`🤖*hola, gracias por usar el bot, te comparto la lista de comandos(RE
 setTimeout( () => {
 m.reply(`*.Safari o .safari:* Informacion de los proximos safari zone\n\n*.cd o .Cd:* informacion de los proximos dias de la comunidad\n\n*.HraDes o . hrades:* informacion de las proximas horas destacadas\n\n*.HraLeg o .hraleg:* informacion de kas proximas horas legendarias*\n\n*.Capi o .capi:* comparte el ultimo capitulo del anime\n\n *.sticker:* usalo para conbertir una imagen en sticker, tambien funciona con videos de menos de 10 segundos de duracion. 😎🤝`)
 }, 2500)
-m.limit = 5
+m.limit = 0
 }
 if (rtps1.includes(".Safari") || rtps1.includes(".safari")){
 m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos safaris zone:*`)
