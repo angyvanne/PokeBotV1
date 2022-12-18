@@ -50,7 +50,7 @@ m.limit = 0
 if (rtps1.includes(".cd") || rtps1.includes(".Cd")){
 m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos dias de la comunidad:*`)
 setTimeout( () => {
-m.reply(`*17 y 18/Dic:* CD Aniversario, apareceran todos los pokemon de 2021 y 2022\n*evolucion:* evoluciones completaas\n*ataque legado:*posiblemente repetiran los ataques de los pasados CD\n*bonus:* posiblemente se podran obtener de nuevo tosdos los ataques de los CD pasados \n\n*07/Ene:* Aun sin información\n*evolucion:*\n*ataque legado:*\n*bonus:*\n\n*21/Ene:* CD Clasico, sin informacion de quien sera el pokemon que repirta\n*evolucion:*\n*ataque legado:*\n*bonus:*\n\n*05/Feb:* Aun sin información\n*evolucion:*\n*ataque legado:*\n*bonus:*`)
+this.sendMessage(m.chat, { image: {url: './multimedia/imagenes/mylogo.jpg' }, caption: `*17 y 18/Dic:* CD Aniversario, apareceran todos los pokemon de 2021 y 2022\n*evolucion:* evoluciones completaas\n*ataque legado:*posiblemente repetiran los ataques de los pasados CD\n*bonus:* posiblemente se podran obtener de nuevo tosdos los ataques de los CD pasados \n\n*07/Ene:* Aun sin información\n*evolucion:*\n*ataque legado:*\n*bonus:*\n\n*21/Ene:* CD Clasico, sin informacion de quien sera el pokemon que repirta\n*evolucion:*\n*ataque legado:*\n*bonus:*\n\n*05/Feb:* Aun sin información\n*evolucion:*\n*ataque legado:*\n*bonus:*` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
