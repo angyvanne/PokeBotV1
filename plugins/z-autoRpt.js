@@ -36,7 +36,7 @@ m.limit = 0
 if (rtps1.includes(".Pokebot") || rtps1.includes(".pokebot")){
 m.reply(`🤖*hola, gracias por usar el bot, te comparto la lista de comandos (RECUERDA PONER UN . ANTES DE CADA COMANDO):*`)
 setTimeout( () => {
-m.reply(`*.Safari o .safari:* Informacion de los proximos safari zone\n\n*.cd o .Cd:* informacion de los proximos dias de la comunidad\n\n*.HraDes o . hrades:* informacion de las proximas horas destacadas\n\n*.HraLeg o .hraleg:* informacion de las proximas horas legendarias*\n\n*.Capi o .capi:* comparte el ultimo capitulo del anime\n\n *.sticker:* usalo para conbertir una imagen en sticker, tambien funciona con videos de menos de 10 segundos de duracion. 😎🤝`)
+m.reply(`*.Safari o .safari:* Informacion de los proximos safari zone\n\n*.sello o .Sello:* Informacion de los pokemon que pueden salir de recompensa semanal\n\n*.cd o .Cd:* informacion de los proximos dias de la comunidad\n\n*.HraDes o .hrades:* informacion de las proximas horas destacadas\n\n*.HraLeg o .hraleg:* informacion de las proximas horas legendarias*\n\n*.incleg o .IncLeg:* Informacion de los dias de cambio de incursiones legendarias\n\n.Megas o .megas:* Informacion del dia de cambio de mega incursiones\n\n*.eventos o .Eventos:* enlista los proximos eventos en el juego\n\n*.sticker:* usalo para convertir una imagen en sticker, tambien funciona con videos de menos de 10 segundos de duracion. 😎🤝`)
 }, 2500)
 m.limit = 0
 }
@@ -47,158 +47,172 @@ m.reply(`*Lugar:AUN SIN INFORMACION DEL PROXIMO SAFARI* \n*fecha:* \n*costos apr
 }, 2500)
 m.limit = 0
 }
+if (rtps1.includes(".sello") || rtps1.includes(".Sello")){
+m.reply(`🤖*hola, aqui esta la imagen de las recompensas del sello semanal de marzo:*`)
+setTimeout( () => {
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/pdnBwYPx/marzo.jpg' }, caption: `*suerte con tus shiny*` }, { quoted: m })
+}, 2500)
+m.limit = 0
+}
 if (rtps1.includes(".cd") || rtps1.includes(".Cd")){
 m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos dias de la comunidad:*`)
 setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://areajugones.sport.es/wp-content/uploads/2022/12/photo1670282737.jpeg' }, caption: `*17 y 18/Dic:* CD Aniversario, apareceran todos los pokemon de 2021 y 2022\n*evolucion:* evoluciones completaas\n*ataque legado:*posiblemente repetiran los ataques de los pasados CD\n*bonus:* posiblemente se podran obtener de nuevo tosdos los ataques de los CD pasados \n\n*07/Ene:* Aun sin información\n*evolucion:*\n*ataque legado:*\n*bonus:*\n\n*21/Ene:* CD Clasico, sin informacion de quien sera el pokemon que repirta\n*evolucion:*\n*ataque legado:*\n*bonus:*\n\n*05/Feb:* Aun sin información\n*evolucion:*\n*ataque legado:*\n*bonus:*` }, { quoted: m })
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/Qdvdssjd/slow.jpg' }, caption: `*18/Marzo:* Aun sin informacion del protagonista\n*evolucion:* Sin informacion\n*ataque legado:* Sin informacion\n*bonus:* sin informacion` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
 if (rtps1.includes(".HraDes") || rtps1.includes(".hrades")){
 m.reply(`🤖*buscando las siguientes horas destacadas:*`)
 setTimeout( () => {
-m.reply(`*22/11:* Petilil con bonus de doble caramelos por transferencia\n*29/11:* Hoothoot con bonus de doble exp por eviolucionar`)
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/xCGjF77m/eevee.jpg' }, caption: `*07/Marzo:* Eevee\n*bonus:* caramelos x2 al treansferir\n*14/Marzo:* Rowlet\n*bonus:* doble experiencia al evolucionar\n*21/Marzo:* Litten\n*bonus:* polvo estelar doble por captura\n*28/Marzo:* Popplio\n*bonus:* doble experiencia por captura` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
 if (rtps1.includes(".HraLeg") || rtps1.includes(".hraleg")){
-m.reply(`🤖*buscando las siguientes horas destacadas:*`)
+m.reply(`🤖*buscando las siguientes horas legendarias:*`)
 setTimeout( () => {
-m.reply(`*23/11:* Nihilego\n*30/11:* Nihilego`)
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/c4qDMJG6/tornadus-2.jpg' }, caption: `*01/Marzo:* Tornadus forma Avatar\n*08/MArzo:* Ho-Oh\n*15/MArzo:* Ho-Oh\n*22/MArzo:* Thundurus forma Avatar\n*29/MArzo:* Lugia` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
-if (rtps1.includes(".capi") || rtps1.includes(".Capi")){
-m.reply(`🤖*hola en un momento comparto el capitulo de la semana en el anime:*`)
+if (rtps1.includes(".IncLeg") || rtps1.includes(".incleg")){
+m.reply(`🤖*buscando las llegadas de las proximas raid legendarias del mes:*`)
 setTimeout( () => {
-m.reply(`*Aun en espera de que se cargue el capitulo*`)
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/mrq3Ldbh/tornadus.jpg' }, caption: `*01/Marzo:* Tornadus forma Avatar\n*08/Marzo:* Ho-Oh\n*21/MArzo:* Thundurus forma Avatar\n*28/Marzo:* Lugia` }, { quoted: m })
+}, 2500)
+m.limit = 0
+}
+if (rtps1.includes(".Megas") || rtps1.includes(".megas")){
+m.reply(`🤖*buscando las llegadas de las proximas raid tipo mega del mes:*`)
+setTimeout( () => {
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/ThM9YK0F/charizard-y.jpg' }, caption: `*01/Marzo:* Charizard forma Y\n*08/Marzo:* Medicham\n*21/Marzo:* Venasaur\n*28/Marzo:* Alakazam` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
 if (rtps1.includes(".eventos") || rtps1.includes(".Eventos")){
 m.reply(`🤖*hola enviando los siguientes eventos:*`)
 setTimeout( () => {
-m.reply(`*03/Dic:* evento desconocido aun\n\n*10 y 11/Dic:* evento desconocido\n\n*24 y 25/Dic:* evento desconocido pero por fechas podria suponer evento de navidad\n\n*???/Feb:* Go tour de la region Hoenn\n\n	durante este evento se espera un Jirachi variocolor asegurado\n\n	Kekleon podria debutar, incluyendo su forma shiny\n\n	Todos los pokemon de la region de Hoenn disponiblescon su version shiny`)
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/D0SN2Vv7/colores.jpg' }, caption: `*✮01/Marzo:* nueva temporada del juego llamada Rising Heroes\n\n*✮05/Marzo:* Evento objetivo de captura\n\n*✮08/Marzo:* Festival de los colores\n\n*✮11/Marzo:* Incursiones elite con regidrago\n\n*✮21/Marzo:* Heroe cotidiano y toma de control del team go rocket\n\n*✮25/Marzo:* Dia de combates Go` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
-//Insultos al bot :vvv
-if (rtps1.includes("puto bot") || (rtps1.includes("Puto bot") || (rtps1.includes("bot puto") || (rtps1.includes("Bot puto") || (rtps1.includes("pinche bot") || (rtps1.includes("Pinche bot") || (rtps1.includes("bot gey") || (rtps1.includes("Bot gey") || (rtps1.includes("bot gay") || (rtps1.includes("Bot gay"))))))))))){
-let resrand = pickRandom(["rpt1", "rpt2", "rpt3", "rpt4", "rpt5", "rpt6", "rpt7", "rpt8", "rpt9", "rpt10", "rpt11", "rpt12", "rpt13", "rpt14", "rpt15", "rpt16", "rpt17", "rpt18", "rpt19", "rpt20", "rpt21", "rpt22", "rpt23", "rpt24", "rpt25", "rpt26", "rpt27", "rpt28", "rpt29", "rpt30", "rpt31", "rpt32", "rpt33", "rpt34", "rpt35", "rpt36", "rpt37", "rpt38", "rpt39", "rpt40", "rpt41", "rpt42", "rpt43", "rpt44", "rpt45", "rpt46", "rpt47", "rpt48", "rpt49", "rpt50", "rpt51", "rpt52", "rpt53", "rpt54", "rpt55", "rpt56", "rpt57", "rpt58", "rpt59", "rpt60", "rpt61", "rpt62", "rpt63", "rpt64", "rpt65", "rpt66", "rpt67", "rpt68", "rpt69", "rpt70", "rpt71", "rpt72", "rpt73", "rpt74", "rpt75", "rpt76", "rpt77"])
-this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/"+resrand+".webp"}, mentions: [m.sender]}, {quoted: {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "51995386439-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `${pushname}: ${m.text}`, 'jpegThumbnail': mylogo}}} })
-m.limit = 5
+//Insultos
+if (rtps1.includes("puto") || (rtps1.includes("Puto") || (rtps1.includes("come tierra") || (rtps1.includes("Inutil") || (rtps1.includes("Pinche ") || (rtps1.includes("pinche") || (rtps1.includes("bot gay") || (rtps1.includes("Bot gay") || (rtps1.includes("bot bobo") || (rtps1.includes("tonto bot"))))))))))){
+let resrand = pickRandom(["chingadazos", "enojado", "no hay", "no no no", "oigaaa"])
+this.sendMessage(m.chat, {sticker: {url: "https://github.com/angyvanne/PokeBotX/tree/main/multimedia/misstks/"+resrand+".webp"}, mentions: [m.sender]}, {quoted: {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "51995386439-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `${pushname}: ${m.text}`, 'jpegThumbnail': mylogo}}} })
+m.limit = 0
 }
 
 //Simp bot gaaa :u
 if (rtps1.includes("bot gracias") || (rtps1.includes("Bot gracias") || (rtps1.includes("gracias bot") || (rtps1.includes("Gracias bot"))))){
-this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} pa servirle mi king nwn`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
-m.limit = 2
+this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} no es nada sucio fly uwu`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
+m.limit = 0
 }
-if (rtps1.includes("te amo bot") || (rtps1.includes("Te amo bot") || (rtps1.includes("bot te amo") || (rtps1.includes("Bot te amo"))))){
-let resrand = pickRandom(["love1", "love2", "love3", "love4", "love5", "love6"])
-this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/"+resrand+".webp"}, mentions: [m.sender]}, {quoted: {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `${pushname} <3`,jpegThumbnail: mylogo}}} })
-m.limit = 5
+if (rtps1.includes("te amo") || (rtps1.includes("Te amo") || (rtps1.includes("te quiero") || (rtps1.includes("Te quiero"))))){
+let resrand = pickRandom(["beso 1", "no hay", "Ala"])
+this.sendMessage(m.chat, {sticker: {url: "https://github.com/angyvanne/PokeBotX/tree/main/multimedia/misstks/"+resrand+".webp"}, mentions: [m.sender]}, {quoted: {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `${pushname} <3`,jpegThumbnail: mylogo}}} })
+m.limit = 0
 }
 
 //Si 🧐//
 if (rtps2.includes("uwu")){
 let resrand = pickRandom(["cringe1", "cringe2", "cringe3", "cringe4", "cringe5"])
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/"+resrand+".webp"}}, { quoted: m } )
-m.limit = 2
+m.limit = 0
 }
 if (rtps2.includes("owo")){
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/owobot.webp"}}, { quoted: m } )
-m.limit = 1
+m.limit = 0
 }
 if (rtps2.startsWith("awa")){
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/awabot.webp"}}, { quoted: m } )
-m.limit = 1
+m.limit = 0
 }
 if (rtps2.startsWith("ewe")){
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/ewebot.webp"}}, { quoted: m } )
-m.limit = 1
+m.limit = 0
 }
 if (rtps2.includes("unu")){
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/unubot.webp"}}, { quoted: m } )
-m.limit = 1
+m.limit = 0
 }
 if (rtps2.includes("7v7")){
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/7v7bot.webp"}}, { quoted: m } )
-m.limit = 1
+m.limit = 0
 }
 if (rtps2.includes("7w7")){
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/7w7bot.webp"}}, { quoted: m } )
-m.limit = 1
+m.limit = 0
 }
 if (rtps2.includes("7u7")){
 this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKosmic/NK-BOT/main/multimedia/misstks/sticker/7u7bot.webp"}}, { quoted: m } )
-m.limit = 1
+m.limit = 0
 }
 
 //Fuertes insultos :v
 if (rtps2.includes("tonto")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᵀᵒⁿᵗᵒ*_`)
-m.limit = 1
+m.reply(`Señor deje de insultar o lo voy a banear\n\n*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*tonto*_`)
+m.limit = 0
 }
 if (rtps2.includes("bobo")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴮᵒᵇᵒ*_`)
-m.limit = 1
+m.reply(`opɐǝuɐq ɐ̗ɹǝs o ɹɐʇʅnsuᴉ ǝp ǝɾǝp ɹoṵǝs\n\n*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*bobo*_`)
+m.limit = 0
 }
-if (rtps2.includes("papanatas")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴾᵃᵖᵃⁿᵃᵗᵃˢ*_`)
-m.limit = 1
+if (rtps2.includes("idiota")){
+m.reply(`s̷e̷ñ̷o̷r̷ d̷e̷j̷e̷ d̷e̷ i̷n̷s̷u̷l̷t̷a̷r̷ o̷ s̷e̷r̷á̷ b̷a̷n̷e̷a̷d̷o̷\n\n*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*idiota*_`)
+m.limit = 0
 }
-if (rtps2.includes("perseve")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴾᵉʳˢᵉᵛᵉ* _`)
-m.limit = 1
+if (rtps2.includes("joto")){
+m.reply(`🆂🅴🅽̃🅾🆁 🅳🅴🅹🅴 🅳🅴 🅸🅽🆂🆄🅻🆃🅰🆁 🅾 🆂🅴🆁🅰 🅱🅰🅽🅴🅰🅳🅾\n\n*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*joto* _`)
+m.limit = 0 
 }
-if (rtps2.includes("pelele")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴾᵉˡᵉˡᵉ*_`)
-m.limit = 1
+if (rtps2.includes("menso")){
+m.reply(`丂🝗𝓝̃ㄖ尺 ᗪ🝗丿🝗 ᗪ🝗 讠𝓝丂ㄩ㇄〸闩尺 ㄖ 丂🝗尺闩́ ⻏闩𝓝🝗闩ᗪㄖ\n\n*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*menso*_`)
+m.limit = 0
 }
 if (rtps2.includes("pamplinas")){
 m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴾᵃᵐᵖˡᶦⁿᵃˢ*_`)
-m.limit = 1
+m.limit = .
 }
 if (rtps2.includes("chispas")){
 m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᶜʰᶦˢᵖᵃˢ*_`)
-m.limit = 1
+m.limit = 0
 }
 
 //fakemsj - no es real . _.
-if (rtps1.includes("pasen porno") || (rtps1.includes("Pasen porno") || (rtps1.includes("pasen xxx") || (rtps1.includes("Pasen xxx"))))){
+if (rtps1.includes("pasen porno") || (rtps1.includes("Pasen porno") || (rtps1.includes("zelda") || (rtps1.includes("nopor"))))){
 this.sendMessage(m.chat, { text: `https://www.interpol.int 𝙸𝚗𝚝𝚎𝚛𝚙𝚘𝚕 𝚖𝚘𝚗𝚒𝚝𝚘𝚛𝚎𝚊 𝚕𝚘𝚜 𝚐𝚛𝚞𝚙𝚘𝚜 𝚍𝚎 𝚠𝚑𝚊𝚝𝚜𝚊𝚙𝚙\n*${pushname}️* , 𝚂𝚎𝚐𝚞𝚗 𝚕𝚊𝚜 𝚗𝚘𝚛𝚖𝚊𝚜 𝚍𝚎 𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙 𝚎𝚜𝚎 𝚝𝚒𝚙𝚘 𝚍𝚎 𝚖𝚊𝚝𝚎𝚛𝚒𝚊𝚕 𝚎𝚜𝚝𝚊𝚗 𝚙𝚛𝚘𝚑𝚒𝚋𝚒𝚍𝚘𝚜, 𝙿𝚘𝚛 𝚛𝚊𝚣??𝚗𝚎𝚜 𝚍𝚎 𝚜𝚎𝚐𝚞𝚛𝚒𝚍𝚊𝚍 𝚝𝚞 𝚗𝚞𝚖𝚎𝚛𝚘 𝚜𝚎𝚛𝚊 𝚊𝚐𝚎𝚗𝚍𝚊𝚍𝚘 𝚎𝚗 𝚕𝚊 *Database...*`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "51995386439-1604595598@g.us"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: fs.readFileSync('./multimedia/imagenes/rgdata.jpg'), surface: 200, message: `Usuario: ${pushname}\nNumero: ${etiqueta}`, orderTitle: 'Matt_M', sellerJid: '0@s.whatsapp.net'}}} })
-m.limit = 10
+m.limit = 0
 }
 
 //autorrespuesta multimedia
-if (rtps2.startsWith("kawai")){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audiouwu/onichan.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `Kawaii >~<`, body: `Matt_Mdz`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `kawai.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
-m.limit = 1
+if (rtps1.includes("buenos dias") || (rtps1.includes("Buenos dias") || (rtps1.includes("buenos días") || (rtps1.includes("Buenos días"))))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotX/blob/main/multimedia/sonidos/Bdia.m4a?raw=true"}, fileName: `BonDia_xd.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+m.limit = 0
 }
-if (rtps2.startsWith("baka")){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audiouwu/baka.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `Baka >~<`, body: `Matt_Mdz`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `baka.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
-m.limit = 1
+if (rtps1.includes("feliz navidad") || (rtps1.includes("Feliz navidad"))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotX/blob/main/multimedia/sonidos/feliz%20naviad%20inmundo%20animal.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `Feliz naviad >~<`, body: `PokebotMx`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `FNavi.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+m.limit = 0
 }
-if (rtps2.includes("onich")){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audiouwu/onich.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `Oni-Chan >~<`, body: `Matt_Mdz`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `onichan1.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
-m.limit = 1
+if (rtps1.includes("Hola") || (rtps1.includes("hola"))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotX/blob/main/multimedia/sonidos/hola%20enfermera.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `HOla (o-o)`, body: `PokeBotMx`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `Hola.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+m.limit = 0
 }
-if (rtps2.startsWith("kudasai")){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audiouwu/yamete.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `Yamete kudasai! >//<`, body: `Matt_Mdz`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `kudasai1.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
-m.limit = 1
+if (rtps1.includes("Feliz cumpleaños") || (rtps1.includes("feliz cumpleaños"))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotX/blob/main/multimedia/sonidos/cumple.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `Felicidades <=^-^=>`, body: `PokeBotMx`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `FeliCumple.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+m.limit = 0
 }
-if (rtps2.startsWith("yutki")){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audiouwu/yutki.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `Yutki >~<`, body: `Matt_Mdz`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `yutki.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
-m.limit = 1
+if (rtps1.includes("callados") || (rtps1.includes("Callados"))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotX/blob/main/multimedia/sonidos/Murio.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `Despierten `, body: `PokeBotMx`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `despierten.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+m.limit = 0
 }
-if (rtps2.startsWith("yokese")){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audiouwu/yokese.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `Yokese >~<`, body: `Matt_Mdz`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `yokese.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
-m.limit = 1
+if (rtps1.includes("maricon") || (rtps1.includes("joto") || (rtps1.includes("manco") || (rtps1.includes("gay") || (rtps1.includes("Maricon") || (rtps1.includes("Joto") || (rtps1.includes("Manco") || (rtps1.includes("Gay"))))))))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotX/blob/main/multimedia/sonidos/insultar.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `deja de insultar, joder`, body: `PokeBotMx`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `insultos.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+m.limit = 0
 }
-if (rtps2.startsWith("yajaro")){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audiouwu/yajaro.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `Yajaro! >o<`, body: `Matt_Mdz`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `yajaro.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
-m.limit = 1
+if (rtps1.includes("son novios") || (rtps1.includes("Son novios"))){
+this.sendMessage(m.chat, {audio: {url: "https://github.com/angyvanne/PokeBotX/blob/main/multimedia/sonidos/vivan.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `Amigo, ustedes son novios??`, body: `PokeBotMx`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `novios.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
+m.limit = 0
 }
 if (rtps2.startsWith("woau")){
 this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audiouwu/woau.m4a?raw=true"}, contextInfo:{externalAdReply: {title: `Kawaii >~<`, body: `Matt_Mdz`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `woau.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
@@ -337,10 +351,7 @@ if (rtps1.startsWith("yamete") || (rtps1.startsWith("Yamete"))){
 this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audiouwu/ya.mp3?raw=true"}, contextInfo:{externalAdReply: {title: `Yamete >//<`, body: `Matt_Mdz`, sourceUrl: reddom, thumbnailUrl: userthumb}}, fileName: `yamete.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
 m.limit = 1
 }
-if (rtps1.includes("buenos dias") || (rtps1.includes("Buenos dias") || (rtps1.includes("buenos días") || (rtps1.includes("Buenos días"))))){
-this.sendMessage(m.chat, {audio: {url: "https://github.com/NeKosmic/NK-BOT/blob/main/multimedia/sonidos/audishitxd/Bdia.m4a?raw=true"}, fileName: `BonDia_xd.mp3`, mimetype: 'audio/mpeg', ptt:true}, {quoted: m })
-m.limit = 5
-}
+
 //
 //
 if (rtps1.includes("si 👍") || (rtps1.includes("Si 👍"))){
@@ -375,4 +386,4 @@ this.sendMessage(m.chat, {sticker: fs.readFileSync('./multimedia/misstks/teslago
 return !0
 }
 
-export default handler
+export default handlerr
